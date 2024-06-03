@@ -1,6 +1,7 @@
-console.log("Hello World! Ready to play?")
+let name = prompt("Hi there! What's your name", ' ');
+console.log(`Hello ${name}! Ready to play?`)
 console.log('You will have 5 rounds. The one with the most points wins');
-console.log("To play type 'playGame();' and press Enter ");
+console.log("To play type playGame(); and press Enter ");
 
 let mainArray = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
@@ -63,12 +64,11 @@ console.log('');
 }
 
 //function to play a game of 5 rounds. 
-function playgame() {
+function playGame() {
       
     for (round = 0; round < 5; round++){
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
     }
-    return;
 }
