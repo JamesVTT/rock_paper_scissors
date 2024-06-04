@@ -55,9 +55,11 @@ console.log('The computer has ' + computerScore + ' points');
 console.log('');
     if (round == 4) {
         if (humanScore > computerScore) {
-            console.log('Congratulations you win! You beat the computer by' (humanScore-computerScore))
-        } else {
+            console.log('Congratulations you win! You beat the computer by' + (humanScore-computerScore))
+        } else if (humanScore < computerScore) {
             console.log('Welp you lost by ' + (computerScore-humanScore));
+        } else {
+            console.log('It\'s a draw!!')
         }
         console.log('Game Over!')
     }
